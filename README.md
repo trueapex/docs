@@ -18,7 +18,7 @@ $ source ./[ENVIRONMENT_NAME]/bin/activate
 
 Install Sphinx
 ```
-$ pip install sphinx sphinx-autobuild
+$ pip install sphinx sphinx-autobuild recommonmark
 ```
 
 ### Building the Document
