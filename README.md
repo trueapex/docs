@@ -6,6 +6,18 @@ An attempt to improve the documentation process both internally for company proc
 ## User Guide
 
 ### Creating and Activating a Python Environment
+Create a directory inside your project to hold your docs
+```
+$ cd /path/to/project
+$ mkdir docs
+```
+
+Run sphinx-quickstart in there
+```
+$ cd docs
+$ sphinx-quickstart
+```
+
 Create a separate Python Environment specific for this project.
 ```
 $ virtualenv [ENVIRONMENT_NAME]
@@ -21,19 +33,10 @@ Install Sphinx
 $ pip install sphinx sphinx-autobuild recommonmark
 ```
 
+### Add Content
+Add contents.
+
 ### Building the Document
-Create a directory inside your project to hold your docs
-```
-$ cd /path/to/project
-$ mkdir docs
-```
-
-Run sphinx-quickstart in there
-```
-$ cd docs
-$ sphinx-quickstart
-```
-
 Build document
 ```
 $ make html
