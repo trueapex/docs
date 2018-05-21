@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Search &mdash; True Apex v0.0.1 documentation</title>
+  <title>DateTime Class &mdash; True Apex v0.0.1 documentation</title>
   
 
   
@@ -28,7 +28,8 @@
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Quickstart" href="quickstart.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -60,7 +61,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="#" method="get">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -77,10 +78,10 @@
               
             
             
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
-<li class="toctree-l1"><a class="reference internal" href="class.html">DateTime Class</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">DateTime Class</a></li>
 </ul>
 
             
@@ -126,12 +127,14 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Search</li>
+      <li>DateTime Class</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
+            <a href="_sources/class.rst.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
     
@@ -143,24 +146,74 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search
-      functionality.
-    </p>
-  </div>
-  </noscript>
+  <div class="section" id="datetime-class">
+<h1>DateTime Class<a class="headerlink" href="#datetime-class" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="DateTime">
+<em class="property">class </em><code class="descname">DateTime</code><a class="headerlink" href="#DateTime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Datetime class</p>
+<dl class="method">
+<dt id="DateTime::setDate">
+<code class="descname">setDate</code><span class="sig-paren">(</span><em>$year</em>, <em>$month</em>, <em>$day</em><span class="sig-paren">)</span><a class="headerlink" href="#DateTime::setDate" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Set the date.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">param int $year:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">The year.
+:param int $month: The month.
+:param int $day: The day.
+:returns: Either false on failure, or the datetime object for method chaining.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<dl class="method">
+<dt id="DateTime::setTime">
+<code class="descname">setTime</code><span class="sig-paren">(</span><em>$hour</em>, <em>$minute</em><span class="optional">[</span>, <em>$second</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#DateTime::setTime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the time.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$hour</strong> (<em>int</em>) – The hour
+:param int $minute: The minute
+:param int $second: The second
+:returns: Either false on failure, or the datetime object for method chaining.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
-  
-  <div id="search-results">
-  
-  </div>
+<dl class="const">
+<dt id="DateTime::ATOM">
+<em class="property">constant </em><code class="descname">ATOM</code><a class="headerlink" href="#DateTime::ATOM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Y-m-dTH:i:sP</p>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
 
            </div>
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="quickstart.html" class="btn btn-neutral" title="Quickstart" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -200,7 +253,6 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="_static/searchtools.js"></script>
 
   
 
@@ -213,14 +265,7 @@
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
-  
-  <script type="text/javascript" id="searchindexloader"></script>
-   
-
+  </script> 
 
 </body>
 </html>
