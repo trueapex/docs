@@ -82,6 +82,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Overview</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#system-information">System Information</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a></li>
 </ul>
 </li>
 </ul>
@@ -172,13 +173,35 @@ brew install pyenv
 pyenv install <span class="m">3</span>.6.5
 pyenv versions
 python --version
-pyenv <span class="nb">local</span> <span class="m">3</span>.6.5
-python --version
 
 <span class="c1"># Install pyenv-virtualenv</span>
 brew install pyenv-virtualenv
 <span class="nb">eval</span> <span class="s2">&quot;</span><span class="k">$(</span>pyenv init -<span class="k">)</span><span class="s2">&quot;</span>
 <span class="nb">eval</span> <span class="s2">&quot;</span><span class="k">$(</span>pyenv virtualenv-init -<span class="k">)</span><span class="s2">&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create documentation directory</span>
+mkdir documentation
+<span class="nb">cd</span> documentation
+
+<span class="c1"># Set Python version to use through .python-version file</span>
+pyenv <span class="nb">local</span> <span class="m">3</span>.6.5
+python --version
+
+<span class="c1"># Create a virtual environment specific for this project</span>
+pyenv virtualenv <span class="m">3</span>.6.5 venv365
+
+<span class="c1"># Activating the environment</span>
+pyenv activate venv365
+
+<span class="c1"># Deactivating the environment</span>
+pyenv deactivate
+
+<span class="c1"># Build documentation</span>
+make html
 </pre></div>
 </div>
 </div>
