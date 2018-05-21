@@ -15,5 +15,3 @@ User Guide
    :maxdepth: 3
 
    overview
-   quickstart
-   class
